@@ -99,6 +99,7 @@
     }
     .services-items .service-item p {
         margin-bottom: 25px;
+        padding-right: 20px;
     }
     .services-items .service-item i {
         font-size: 20px;

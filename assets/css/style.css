@@ -30,6 +30,8 @@
     * @Keyframe
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 :root {
     --primary_color: #28e98c;
 }
@@ -40,11 +42,11 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
     color: #999999;
-    background: #1f1f1f;
+    background: #101010;
     line-height: 1.7;
     overflow-x: hidden;
     height: 100vh;
@@ -74,6 +76,8 @@ ul {
 .theme-btn {
     background: var(--primary_color);
     color: #000000;
+    font-weight: 600;
+    font-size: 20px;
     display: block;
     text-align: center;
     padding: 11px 58px 10px 58px;
@@ -81,7 +85,6 @@ ul {
     align-items: center;
     border-radius: 30px;
     justify-content: center;
-    text-transform: uppercase;
     border: none;
     transition: .3s;
     cursor: pointer;
@@ -103,21 +106,19 @@ ul {
     margin: auto;
 }
 .subtitle {
-    font-size: 12px;
+    font-size: 16px;
     color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0;
     border: 1px solid #565656;
     padding: 9px 20px;
     border-radius: 30px;
-    margin-bottom: 53px;
+    margin-bottom: 30px;
     display: inline-flex;
     align-items: center;
 }
 .subtitle i {
-    margin-bottom: 1px;
-    font-size: 14px;
+    font-size: 20px;
     margin-right: 10px;
 }
 
@@ -259,7 +260,7 @@ main.drake-main {
     right: 100%;
     color: #fff;
     display: block;
-    padding: 3px 8px;
+    padding: 3px 12px;
     border-radius: 5px;
     visibility: hidden;
     opacity: 0;
@@ -276,6 +277,17 @@ main.drake-main {
     transform: rotate(54deg) skew(-8deg, -39deg);
     margin-top: -5px;
     z-index: -1;
+}
+
+.left-sidebar .sidebar-header span {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.left-sidebar .email {
+    font-weight: 600;
 }
 
 /* 02 - Responsive Sidebar Menu */
@@ -645,10 +657,48 @@ main.drake-main {
     color: #fff;
 }
 
+.footer-social-icons .social-profile li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 46px;
+    text-align: center;
+    border: 2px solid #565656;
+    border-radius: 50%;
+    color: #999999;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.footer-social-icons .social-profile li span {
+    margin-left: 10px;
+}
+
+.footer-social-icons .social-profile li .skype {
+    font-size: 22px;
+}
+
+.footer-social-icons .social-profile li a i {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6px;
+}
+
+.footer-social-icons .social-profile li a:hover {
+    color: var(--primary_color);
+    border-color: var(--primary_color);
+}
+
+.footer-social-icons .social-profile li:hover{
+    color: var(--primary_color);
+}
+
 
 /* 05 - Section Header */
 .section-header h1 {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 60px;
     color: #fff;
     font-weight: 300;
@@ -656,6 +706,7 @@ main.drake-main {
 }
 .section-header h1 span {
     color: var(--primary_color);
+    font-weight: 600;
 }
 
 
@@ -697,7 +748,9 @@ main.drake-main {
     font-weight: 300;
 }
 .left-sidebar .address {
+    color: #b1b1b1;
     margin-bottom: 30px;
+    font-size: 14px;
 }
 .left-sidebar .copyright {
     font-size: 14px;
@@ -741,18 +794,17 @@ main.drake-main {
     z-index: 3;
 }
 .hero-section .hero-content h1 {
-    font-size: 78px;
-    letter-spacing: -0.2px;
+    font-size: 56px;
     line-height: 90px;
-    margin-bottom: 43px;
+    margin-bottom: 5px;
     font-weight: 300;
 }
 .hero-section .hero-content h1 span {
     color: var(--primary_color);
 }
 .hero-section .hero-content > p {
-    max-width: 480px;
     margin-bottom: 31px;
+    font-size: 22px;
 }
 .hero-section .hero-content .go-to-project-btn {
     width: 175px;
@@ -782,15 +834,16 @@ main.drake-main {
     margin-top: 55px;
 }
 .hero-section .hero-content .facts h1 {
-    font-size: 72px;
+    font-size: 56px;
     color: var(--primary_color);
     line-height: 56px;
-    margin-bottom: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 .hero-section .hero-content .facts p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
-    text-transform: uppercase;
+    color: #fff;
 }
 
 /* 08 - Home 3 */
@@ -842,6 +895,10 @@ body .body-overlay {
     opacity: 0.3;
 }
 
+.experience {
+    margin-top: 4.6rem;
+}
+
 
 
 /* 10 - About */
@@ -863,7 +920,7 @@ body .body-overlay {
 .resume-area .resume-content .resume-timeline .item {
     position: relative;
     padding-left: 74px;
-    padding-bottom: 68px;
+    padding-bottom: 50px;
 }
 .resume-area .resume-content .resume-timeline .item:last-child {
     padding-bottom: 0;
@@ -894,7 +951,8 @@ body .body-overlay {
 }
 .resume-area .resume-content .resume-timeline .item .date {
     display: block;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
+    font-size: 20px;
     transition: .3s;
 }
 .resume-area .resume-content .resume-timeline .item h2 {
@@ -941,14 +999,26 @@ body .body-overlay {
     margin-bottom: 0;
 }
 .services-items .service-item h2 {
+    font-weight: 600;
     font-size: 24px;
-    font-weight: 300;
     margin-bottom: 8px;
     color: #fff;
 }
 .services-items .service-item h2 a {
     color: #fff;
     transition: .3s;
+}
+.service-lang p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+}
+.service-lang p i {
+    position: relative !important;
+    top: 0 !important;
+    color: #999999 !important;
+    right: 10px !important;
+    font-size: 23px !important;
 }
 .services-items .service-item:hover {
     border-color: var(--primary_color);
@@ -957,18 +1027,17 @@ body .body-overlay {
     color: var(--primary_color);
 }
 .services-items .service-item p {
-    font-size: 14px;
+    font-size: 16px;
     color: #999999;
+    padding-right: 80px;
     margin-bottom: 30px;
 }
 .services-items .service-item .projects {
-    font-size: 12px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
     color: #fff;
-    text-transform: uppercase;
     display: inline-block;
-}
-.services-items .service-item:hover .projects {
-    text-decoration: underline;
 }
 .services-items .service-item i {
     position: absolute;
@@ -1001,15 +1070,16 @@ body .body-overlay {
 .skills .skill .skill-inner img {
     display: block;
     margin: auto auto 29px auto;
+    width: 60px;
 }
 .skills .skill .skill-inner h1 {
-    font-size: 30px;
-    color: var(--primary_color);
-    font-weight: 300;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
     margin: 0;
 }
 .skills .skill p {
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     margin: 0;
 }
